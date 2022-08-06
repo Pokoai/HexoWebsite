@@ -19,6 +19,7 @@ tags:
    - 北大的[OpenJudge](http://noi.openjudge.cn/)
    - 浙大的[ZOJ](http://acm.zju.edu.cn/onlinejudge/)
   
+<!--more-->
 
 ## 1、学习 C 语法
 

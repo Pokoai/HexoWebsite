@@ -11,7 +11,7 @@ excerpt_link: More
 prev: Prev
 next: Next
 reply: Reply
-# share: Share
+## share: 分享
 fancybox: true
 
 # Sidebar

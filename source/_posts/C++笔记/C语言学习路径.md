@@ -6,6 +6,7 @@ categories:
 - Coding
 tags:
 - C
+id: 1
 ---
 
 **在线编译器：**[https://www.tutorialspoint.com/compile_c_online.php](https://www.tutorialspoint.com/compile_c_online.php)

@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://hexo-website-rust.vercel.app/
-permalink: :id.html/
+permalink: :id.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,6 +97,20 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+ plugin:
+ - hexo-generator-feed
+ - hexo-generator-sitemap
+ - hexo-generator-baidu-sitemap
+ # Feed Atom
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  autodiscovery: true
 ## Themes: https://hexo.io/themes/
 theme: cyanstyle
 ## theme: landscape

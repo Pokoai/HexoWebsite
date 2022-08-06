@@ -91,12 +91,26 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
+include: source/asset/
 exclude:
 ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+ plugin:
+ - hexo-generator-feed
+ - hexo-generator-sitemap
+ - hexo-generator-baidu-sitemap
+ # Feed Atom
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  autodiscovery: true
 ## Themes: https://hexo.io/themes/
 theme: cyanstyle
 ## theme: landscape

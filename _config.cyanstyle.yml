@@ -5,6 +5,7 @@ menu:
   Archives: /archives
   About: /about
   Projects: https://github.com/Pokoai
+  Rss: /atom.xml
 
 # Content
 excerpt_link: More

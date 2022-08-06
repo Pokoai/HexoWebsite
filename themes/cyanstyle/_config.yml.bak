@@ -4,14 +4,15 @@ menu:
   Series: /series
   Archives: /archives
   About: /about
-  Projects: https://github.com/Pokoai
+  Projects: github.com/Pokoai
+  Rss: /atom.xml
 
 # Content
 excerpt_link: More
 prev: Prev
 next: Next
 reply: Reply
-share: 分享
+##share: 分享
 fancybox: true
 
 # Sidebar

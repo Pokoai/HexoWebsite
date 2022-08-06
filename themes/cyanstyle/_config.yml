@@ -4,7 +4,8 @@ menu:
   Series: /series
   Archives: /archives
   About: /about
-  Projects: /https://github.com/Pokoai
+  Projects: https://github.com/Pokoai
+  Rss: /atom.xml
 
 # Content
 excerpt_link: More
@@ -17,8 +18,8 @@ fancybox: true
 # Sidebar
 widgets:
 - search
-- music
 - category
+- music
 - recent_posts
 - tag
 - tagcloud

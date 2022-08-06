@@ -4,6 +4,7 @@ menu:
   Series: /series
   Archives: /archives
   About: /about
+  Rss: /atom.xml
   Projects: https://github.com/Pokoai
 
 # Content
@@ -30,4 +31,4 @@ rss: /atom.xml
 google_site_verification: 
 baidu_site_verification: 
 favicon: https://img.arctee.cn/one/202208070137740.ico
-music: /miss.mp3
+music: /asset/miss.mp3

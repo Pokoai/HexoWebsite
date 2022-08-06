@@ -17,13 +17,7 @@ fancybox: true
 
 # Sidebar
 widgets:
-- search
-- wechat
-- category
-- music
-- recent_posts
-- tag
-- tagcloud
+
 
 # Miscellaneous
 google_analytics:

@@ -18,11 +18,11 @@ fancybox: true
 # Sidebar
 widgets:
 - search
-- wechat
 - category
+- wechat
 - recent_posts
 - music
-- tag
+## - tag
 - tagcloud
 
 # Miscellaneous
@@ -30,7 +30,7 @@ favicon: https://img.arctee.cn/one/202208070137740.ico
 music: /asset/miss.mp3
 
 ## 微信公众号话术、图片链接
-wechat_words: "请关注我的公众号，回复「资源」来获取更多资源："
+wechat_words: "请关注我的公众号，获取更多资源："
 wechat_img: https://img.arctee.cn/one/pokeai-wechat.png
 
 google_analytics:

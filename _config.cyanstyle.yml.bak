@@ -26,8 +26,8 @@ widgets:
 # Miscellaneous
 google_analytics:
 duoshuo_shortname: 
-rss: 
+rss: /atom.xml
 google_site_verification: 
 baidu_site_verification: 
-favicon: ./source/_img/favicon.ico
-music: 
+favicon: https://img.arctee.cn/one/202208070137740.ico
+music: http://music.163.com/song/media/outer/url?id=28953350.mp3

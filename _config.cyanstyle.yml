@@ -1,22 +1,25 @@
 # Header
 menu:
   Home: /
+  Series: /series
   Archives: /archives
+  About: /about
+  Projects: https://github.com/Pokoai
 
 # Content
 excerpt_link: More
 prev: Prev
 next: Next
 reply: Reply
-share: Share
+## share: 分享
 fancybox: true
 
 # Sidebar
 widgets:
 - search
-- music
 - category
 - recent_posts
+- music
 - tag
 - tagcloud
 

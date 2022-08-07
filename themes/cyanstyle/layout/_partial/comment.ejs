@@ -7,7 +7,14 @@
   <script>
       Waline.init({
         el: '#waline',
-        serverURL: 'https://waline-p1hwb9itf-pokoai.vercel.app',
+        serverURL: '<%= theme.waline.serverURL %>',
+        
+        placeholder: '<%= theme.waline.placeholder %>',
+        requiredFields: '<%= theme.waline.requiredFields %>',
+        pageSize: '<%= theme.waline.pageSize %>',
+        avatar: '<%= theme.waline.avatar %>',
+        copyright: false,
+        
       });
   </script>
 </section>

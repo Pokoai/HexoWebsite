@@ -1,6 +1,6 @@
 # Header
 menu:
-  Home: / || fa fa-home
+  Home: /
   Series: /series 
   Archives: /archives
   About: /about
@@ -17,11 +17,11 @@ fancybox: true
 
 # Sidebar
 widgets:
+- music_new
 - search
-
 - category
 - wechat
-- music_new
+
 - recent_posts
 ## - tag
 - tagcloud

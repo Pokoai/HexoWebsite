@@ -17,11 +17,11 @@ fancybox: true
 
 # Sidebar
 widgets:
+- music_new
 - search
-
 - category
 - wechat
-- music_new
+
 - recent_posts
 ## - tag
 - tagcloud
@@ -35,8 +35,10 @@ music: /asset/miss.mp3
 wechat_words: "请关注我的公众号，获取更多资源："
 wechat_img: https://img.arctee.cn/one/pokeai-wechat.png
 
-google_analytics:
-duoshuo_shortname: 
+## waline评论
+waline_comment: true
+
 rss: /atom.xml
+google_analytics:
 google_site_verification: 
 baidu_site_verification: 

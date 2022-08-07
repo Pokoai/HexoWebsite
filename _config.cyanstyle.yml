@@ -18,12 +18,14 @@ fancybox: true
 # Sidebar
 widgets:
 - search
+
 - category
 - wechat
+- music_new
 - recent_posts
-- music
 ## - tag
 - tagcloud
+
 
 # Miscellaneous
 favicon: https://img.arctee.cn/one/202208070137740.ico

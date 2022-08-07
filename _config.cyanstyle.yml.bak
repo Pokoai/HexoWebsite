@@ -1,7 +1,7 @@
 # Header
 menu:
-  Home: /
-  Series: /series
+  Home: / || fa fa-home
+  Series: /series 
   Archives: /archives
   About: /about
   Projects: https://github.com/Pokoai
@@ -18,9 +18,10 @@ fancybox: true
 # Sidebar
 widgets:
 - search
-- music_new
+
 - category
 - wechat
+- music_new
 - recent_posts
 ## - tag
 - tagcloud

@@ -17,9 +17,9 @@ fancybox: true
 
 # Sidebar
 widgets:
-- music_new
 ## - search
 - category
+- music_new
 - recent_posts
 ## - tag
 - tagcloud

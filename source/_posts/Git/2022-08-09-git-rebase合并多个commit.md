@@ -3,6 +3,7 @@ title: git rebase合并多个commit
 date: 2022-08-09 02:39:58
 categories:
 - Coding
+- Git
 tags:
 - git
 id: 9

@@ -13,7 +13,8 @@ date: 2022-08-06 07:47:57
 
 - Coding: 计算机技能路线
 - Paper：计算机视觉学术科研
-- Reading：阅读思考
+- Growth：终身成长，提升思维
+- Reading：阅读
 - Finance：投资理财
 - Life：健康及兴趣爱好
 - Geeker：生命在于折腾

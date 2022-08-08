@@ -5,7 +5,6 @@ categories:
 - Coding
 - Linux
 tags:
-- Linux
 - VMWare
 id: 14
 ---

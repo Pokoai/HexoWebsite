@@ -7,6 +7,7 @@ categories:
 tags:
 - Linux
 - Kali
+- wifi
 id: 15
 ---
 

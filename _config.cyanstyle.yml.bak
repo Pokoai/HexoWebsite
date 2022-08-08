@@ -18,7 +18,7 @@ fancybox: true
 # Sidebar
 widgets:
 - music_new
-## - search
+- search
 - category
 - wechat
 

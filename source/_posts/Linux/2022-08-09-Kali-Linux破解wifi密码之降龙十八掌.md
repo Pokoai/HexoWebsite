@@ -9,8 +9,6 @@ tags:
 id: 15
 ---
 
-![](https://img.arctee.cn/one/202207102338502.png)
-
 > 本文讲述如何利用 kali 机 aircrack-ng 相关命令，抓取 wifi 连接握手包。然后结合密码字典，破解 wifi 账号密码。
 > 参考：[https://leexuan.github.io/2020/06/Kali+Airmon+WiFi%E7%A0%B4%E8%A7%A3/](https://leexuan.github.io/2020/06/Kali+Airmon+WiFi%E7%A0%B4%E8%A7%A3/)
 
@@ -29,6 +27,8 @@ s |  !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~   特殊字符
 a | ?l?u?d?s                            键盘上所有可见的字符
 b | 0x00 - 0xff                         可能是用来匹配像空格这种密码的
 ```
+
+<!--more-->
 
 ### 2. 简单的例子
 

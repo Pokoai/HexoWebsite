@@ -13,6 +13,8 @@ id: 14
 
 用 VMware 安装完 Ubuntu Linux 系统后，重启进入到 Ubuntu 界面，这时发现整个窗口很小，没有铺满 VMware 的窗口，而且也不会跟随 VMware 窗口的缩放而变化。示图如下：
 
+<!--more-->
+
 ![](https://img.arctee.cn/one/202205271150837.png)
 
 ## 分析

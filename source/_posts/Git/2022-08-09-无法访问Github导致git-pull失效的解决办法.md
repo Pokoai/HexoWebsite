@@ -17,6 +17,7 @@ git pull
 
 fatal: 无法访问 'https://github.com/teddysun/lamp.git/'：Empty reply from server
 ```
+<!--more-->
 
 然后我们 ping 一下 github.com，长时间无任何反馈：
 

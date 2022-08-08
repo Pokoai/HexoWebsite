@@ -5,7 +5,6 @@ categories:
 - Coding
 - Linux
 tags:
-- Linux
 - Kali
 - wifi
 id: 15

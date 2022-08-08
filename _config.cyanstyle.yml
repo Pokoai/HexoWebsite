@@ -39,7 +39,7 @@ wechat_img: https://img.arctee.cn/one/pokeai-wechat.png
 waline_comment: true
 ## el 和 path 会在页面自动生成，不必加入
 waline:
-  serverURL: https://waline-p1hwb9itf-pokoai.vercel.app # Waline 的服务端地址（必填）
+  serverURL: https://comment.pokeai.cn/ # Waline 的服务端地址（必填）
   meta: [nick,mail,link] # waline comment header info
   avatar: robohash # Gravatar头像展示方式。默认值：'mp'【不必填】
   requiredFields: [nick,mail]  # 设置评论者属性必填项。默认值：[]（即匿名）【不必填】

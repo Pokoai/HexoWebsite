@@ -18,7 +18,7 @@ fancybox: true
 # Sidebar
 widgets:
 - music_new
-- search
+## - search
 - category
 - wechat
 
@@ -39,8 +39,9 @@ wechat_img: https://img.arctee.cn/one/pokeai-wechat.png
 waline_comment: true
 ## el 和 path 会在页面自动生成，不必加入
 waline:
-  serverURL: https://waline-p1hwb9itf-pokoai.vercel.app # Waline 的服务端地址（必填）
+  serverURL: https://comment.pokeai.cn/ # Waline 的服务端地址（必填）
   meta: [nick,mail,link] # waline comment header info
+  avatar: robohash # Gravatar头像展示方式。默认值：'mp'【不必填】
   requiredFields: [nick,mail]  # 设置评论者属性必填项。默认值：[]（即匿名）【不必填】
   placeholder: 快来评论吧~  # 评论占位提示
   pageSize: 10 # 评论列表分页，每页条数。默认值：10【不必填】
@@ -49,7 +50,7 @@ waline:
   visitor: # 文章访问量统计。默认值: false【不必填】
   login: # 登录模式状态，默认值：enable（'enable': 启用登录、'disable': 禁用登录，用户只能填写信息评论、'force': 强制登录，用户必须注册并登录才可发布评论）【不必填】
   wordLimit: # 评论字数限制，填入单个数字时为最大字数限制。默认值：0（即不限制）【不必填】
-  avatar: robohash # Gravatar头像展示方式。默认值：'mp'【不必填】
+  
   avatarCDN: # 设置Gravatar头像CDN地址。默认值: https://sdn.geekzu.org/avatar/【不必填】
   avatarForce: # 每次访问是否强制拉取最新的评论列表头像。默认值：false【不必填】
   highlight: # 代码高亮显示。默认值：true【不必填】

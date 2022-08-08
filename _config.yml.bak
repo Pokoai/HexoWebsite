@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Guyue
+title: 破壳Ai
 subtitle: 'Focus - Keep things simple'
 description: '紧跟未来科技进展，从计算机底层到AI技术层，逐层破壳、深练内功。'
 keywords: AI,C++,python,计算机视觉,数据结构,算法,计算机网络,操作系统
-author: Guyue
+author: POKE AI
 language: zh-Hans
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://hexo-website-rust.vercel.app/
+url: https://pokeai.cn/
 permalink: :id.html
 permalink_defaults:
 pretty_urls:

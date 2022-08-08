@@ -1,11 +1,11 @@
 # Header
 menu:
   Home: /
-  Series: /series 
+  ## Series: /series 
   Archives: /archives
   About: /about
   Projects: https://github.com/Pokoai
-  Rss: /atom.xml
+  ## Rss: /atom.xml
 
 # Content
 excerpt_link: More
@@ -28,7 +28,7 @@ widgets:
 
 # Miscellaneous
 favicon: https://img.arctee.cn/one/favicon.ico
-music: //music.163.com/outchain/player?type=0&id=2997207196&auto=0&height=32
+music: //music.163.com/outchain/player?type=0&id=2818034763&auto=1&height=32
 
 ## 微信公众号话术、图片链接
 wechat_words: "请关注我的公众号，获取更多资源："

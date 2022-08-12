@@ -17,6 +17,8 @@ id: 41
 
 ![](https://img.arctee.cn/one/202208100126028.png)
 
+<!--more-->
+
 我用的是 [waline](https://waline.js.org/) 评论组件，后端部署在 [vercel](https://vercel.com) 上面，具体教程网上很多，官方的教程[看这里](https://waline.js.org/guide/get-started.html#vercel-%E9%83%A8%E7%BD%B2-%E6%9C%8D%E5%8A%A1%E7%AB%AF)。
 
 同时配置了[邮件通知](https://waline.js.org/guide/server/notification.html)功能，在 vercel 中设置几个变量即可，可以申请个 163 邮箱来发送通知邮件，建议不要使用自己的主邮箱。
@@ -227,11 +229,11 @@ music: //music.163.com/outchain/player?type=0&id=2818034763&auto=0&height=32
 - 按键图片可以去[阿里图标库](https://www.iconfont.cn/)找一个，尺寸为 48*48，然后放在 `/css/images`路径下，图片名修改为 `top.png`。
 
 
-### 4. 网站底部增加统计功能
+## 4. 网站底部增加统计功能
 
 实现效果图：
 
-![](https://img.arctee.cn/one/202208100130600.png)
+![](https://img.arctee.cn/one/202208100221169.png)
 
 其中有两部分：
 

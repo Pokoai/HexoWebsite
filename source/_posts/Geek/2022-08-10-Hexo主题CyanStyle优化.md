@@ -3,6 +3,7 @@ title: Hexo主题CyanStyle优化
 date: 2022-08-10 00:02:22
 categories:
 - Coding
+- Geek
 tags:
 - Hexo
 - CyanStyle
@@ -170,12 +171,12 @@ music: ./asset/123.mp3  # 假设歌曲文件名为 123.MP3
 <!--去[网易云音乐](https://music.163.com/)搜索喜欢的音乐，点击生成外链播放器， 复制代码直接放到博文末尾即可，
 height设为0可隐藏播放器，但仍然可以播放音乐，auto设成0可手动播放，默认是1自动播放。-->
 
-<% if (theme.music){ %>
+<% if (theme.music && theme.music.enable){ %>
   <aside class="widget">
     <h3 class="widget-title">Music</h3>
     <div class="widget-content">
       <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 
-      src="<%= theme.music %>"></iframe>
+      src="//music.163.com/outchain/player?type=0&id=<%= theme.music.id %>&auto=<%= theme.music.autoplay?1:0 %>&height=32"></iframe>
     </div>
   </aside>
 <% } %>
@@ -190,16 +191,21 @@ height设为0可隐藏播放器，但仍然可以播放音乐，auto设成0可�
 
 # Sidebar
 widgets:
-## - music
 - music_new
 
-# Miscellaneous
-music: //music.163.com/outchain/player?type=0&id=2818034763&auto=0&height=32
+## 网易云音乐插件
+music: 
+  enable: true
+  autoplay: true
+  id: 2818034763  
 
 ```
 
-- 如果要更换播放源，直接更改 `id=2818034763` 即可；`auto=1`：自动播放。
+- 如果要更换播放源，直接更改 `id` 即可；`autoplay: true`：自动播放。
 
+**遗留问题：**翻页会重置播放器的状态，无法不间断播放音乐。
+
+网上介绍用 pjax 解决，我目前没有尝试。
 
 ## 3. 增加返回文章顶部按键
 
@@ -336,4 +342,3 @@ music: //music.163.com/outchain/player?type=0&id=2818034763&auto=0&height=32
   <% } %>
 
 ```
-

@@ -28,7 +28,13 @@ widgets:
 
 # Miscellaneous
 favicon: https://img.arctee.cn/one/favicon.ico
-music: //music.163.com/outchain/player?type=0&id=2818034763&auto=0&height=32
+
+## 网易云音乐插件
+music: 
+  enable: true
+  autoplay: true
+  id: 2818034763  
+  
 
 ## 微信公众号话术、图片链接
 wechat_words: "请关注我的公众号，获取更多资源："

@@ -63,6 +63,11 @@ waline:
   emojiCDN: # 设置表情包 CDN。默认值：https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/【不必填】--即将废弃
 
 
+# toc
+toc:
+  top: true
+  right: true
+
 rss: /atom.xml
 google_analytics:
 google_site_verification: 

@@ -23,13 +23,22 @@
         <% } %>
       <% } else { %>
         <!-- Table of Contents -->
-        <% if (!index && post.toc){ %>
+        <!--目录-侧边栏-->
+        <% if (!index && post.toc && theme.toc.right){ %>
+          <div id="toc-right" class="toc2-article" style="position:fixed; right:1%; top:50px; background-color: white;">
+            <strong class="toc-title">目录</strong>
+            <%- toc(post.content, {list_number: false}) %>
+          </div>
+        <% } %>
+        <!--目录-文章开头-->
+        <% if (!index && post.toc && theme.toc.top){ %>
           <div id="toc" class="toc-article" >
             <strong class="toc-title">文章目录</strong>
             <%- toc(post.content, {list_number: false}) %>
           </div>
         <% } %>
-      
+        </br>  
+        <!--文章正文-->
         <%- post.content %>
       <% } %>
     </div><!-- .entry-content -->

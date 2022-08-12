@@ -1,6 +1,7 @@
 ---
 title: Hexo主题CyanStyle优化
 date: 2022-08-10 00:02:22
+toc: true
 categories:
 - Coding
 - Geek
@@ -12,11 +13,11 @@ id: 41
 
 > 因为网上没有找到 Hexo 对应于 CyanStyle 主题的魔改教程，所以记录下我的优化过程，供后来者借鉴。
 
-## 1. 增加评论功能
+## 一、增加评论功能
 
 实现效果图：
 
-![](https://img.arctee.cn/one/202208100126028.png)
+![](https://img.arctee.cn/one/202208130446096.png)
 
 <!--more-->
 
@@ -134,11 +135,11 @@ waline:
 其中一些设置无法生效，比如 placeholder，原因未知。
 
 
-## 2. 修复音乐播放插件
+## 二、修复音乐播放插件
 
 实现效果图：
 
-![](https://img.arctee.cn/one/202208100127722.png)
+![](https://img.arctee.cn/one/202208130444666.png)
 
 原播放插件其实也是可以的，但有几个局限性：
 
@@ -203,15 +204,18 @@ music:
 
 - 如果要更换播放源，直接更改 `id` 即可；`autoplay: true`：自动播放。
 
-**遗留问题：**翻页会重置播放器的状态，无法不间断播放音乐。
+### 遗留问题
+
+翻页会重置播放器的状态，无法不间断播放音乐。
 
 网上介绍用 pjax 解决，我目前没有尝试。
 
-## 3. 增加返回文章顶部按键
+
+## 三、增加返回文章顶部按键
 
 实现效果图：
 
-![](https://img.arctee.cn/one/202208100128970.png)
+![](https://img.arctee.cn/one/202208130443069.png)
 
 原主题没有返回文章顶部的功能，阅读到文章下方时想要回到前面只能拖动滚动条，很麻烦，所以我加上了该功能。
 
@@ -234,12 +238,15 @@ music:
 
 - 按键图片可以去[阿里图标库](https://www.iconfont.cn/)找一个，尺寸为 48*48，然后放在 `/css/images`路径下，图片名修改为 `top.png`。
 
+### 遗留问题
 
-## 4. 网站底部增加统计功能
+返回顶部图标一直展示在页面右下角，无法自动隐藏。
+
+## 四、网站底部增加统计功能
 
 实现效果图：
 
-![](https://img.arctee.cn/one/202208100221169.png)
+![](https://img.arctee.cn/one/202208130447883.png)
 
 其中有两部分：
 
@@ -313,7 +320,9 @@ music:
 - 其中 `<i class="fa fa-..."></i>` 部分可以删除，因为该主题无法使用 Font Awesome，如何去配置我就懒得花时间了，所以直接复制 🤵 👀 这两个图标过去了。
 
 
-## 5. 修改文章底部翻页标签
+## 五、修改文章底部翻页标签
+
+实现效果图：
 
 ![](https://img.arctee.cn/one/202208100141940.png)
 
@@ -342,3 +351,82 @@ music:
   <% } %>
 
 ```
+
+## 六、文章目录导航栏
+
+实现效果图：
+
+![](https://img.arctee.cn/one/202208130544136.png)
+
+> 主要摘自下面链接1的文章，增加了`list_number`参数，让目录不显示编号。
+
+### 查阅 hexo 文档
+
+在 Hexo 官网 `文档>自定义>辅助函数>` 最下面，可以找到`toc`这个函数，看其介绍能知道它就是来实现文章目录的。
+
+![](https://img.arctee.cn/one/202208130419250.png)
+
+### 修改文章模板
+
+首先编辑文章显示页面的模板，也就是`themes\cyanstyle\layout\_partial\article.ejs` 文件。为了将目录生成在正文之前，我们首先在这个文件中找到 `<%- post.content %>`，并在这一行之前加入如下代码：
+
+```html
+
+<!-- Table of Contents -->
+<!--目录-侧边栏-->
+<% if (!index && post.toc && theme.toc.right){ %>
+  <div id="toc-right" class="toc2-article" style="position:fixed; right:1%; top:50px; background-color: white;">
+    <strong class="toc-title">目录</strong>
+    <%- toc(post.content, {list_number: false}) %>
+  </div>
+<% } %>
+<!--目录-文章开头-->
+<% if (!index && post.toc && theme.toc.top){ %>
+  <div id="toc" class="toc-article" >
+    <strong class="toc-title">文章目录</strong>
+    <%- toc(post.content, {list_number: false}) %>
+  </div>
+<% } %>
+</br>   
+
+```
+
+- 设置了两个目录栏，分别位于文章开头和侧边栏，可以在主题配置文件中开启或关闭任意一个。
+
+这段代码的含义清晰明了，if 语句中有两个条件，`!index` 是为了不在首页的文章摘要中生成目录，`post.toc` 确保了只在显式地标记了 `toc: true` 的文章中生成目录，`theme.toc.top` 确定是否开启目录。若这三个条件满足，则创建一个目录的 <div>。
+
+修改完这个文件之后，找一篇包含了多个子标题的文章，并在文章开头的 `front-matter`中添加一句 `toc: true`，在浏览器中访问这篇文章，应该可以看到文章的开头处已经有了带链接的目录。
+
+### 修改主题配置文件
+
+```yaml
+
+# toc
+toc:
+  top: true
+  right: true
+
+```
+
+### 编写CSS文件美化目录
+
+我觉得原始样式看起来也还可以，就没有去美化了。如果你有美化需求可以看下面两篇文章：
+
+参考链接：
+
+- [https://xyzardq.github.io/2016/11/04/Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95/](https://xyzardq.github.io/2016/11/04/Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95/)
+- [https://cloud.tencent.com/developer/news/264178](https://cloud.tencent.com/developer/news/264178)
+
+### 遗留问题
+
+这里设置的目录位于文章开头，不便于阅读中途查看，最好是放在侧边栏。
+
+但是侧边栏小组件不会随文章下翻而滚动，查看也不方便。
+
+所以有以下几个解决方案：
+
+1. 将目录放在侧边栏的最后一个组件里，并且该组件可以随文章滚动。
+~~2. 因为文章页面最右侧仍有空间，可以将目录放在最右侧空白处的顶端，那么就不会与侧边栏的位置冲突了，而且也不用考虑滚动问题，一直显示即可，就像返回顶部图标一样。~~
+
+~~![](https://img.arctee.cn/one/202208130441652.png)~~
+

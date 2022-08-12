@@ -1,6 +1,7 @@
 ---
 title: 虚拟机如何安装VMware Tools？
 date: 2022-08-09 03:13:10
+toc: true
 categories:
 - Coding
 - Linux

@@ -1,6 +1,7 @@
 ---
 title: 将git仓库里的子文件夹转为一个独立的仓库（保留提交记录commit log）
 date: 2022-08-09 02:46:21
+toc: true
 categories:
 - Coding
 - Git

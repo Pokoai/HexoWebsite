@@ -24,7 +24,7 @@ date: 2022-08-06 16:06:07
   - [兄弟连Linux视频教程评论区总结](https://pokeai.cn/13.html)
   - [虚拟机如何安装VMware Tools？](https://pokeai.cn/14.html)
 
-- Kali
++ Kali
   - [Kail Linux破解wifi密码之降龙十八掌](https://pokeai.cn/15.html)
 
 ## Git
@@ -45,14 +45,14 @@ date: 2022-08-06 16:06:07
   - [VSCode安装教程](https://pokeai.cn/5.html)
   - [VSCode快捷键](https://pokeai.cn/6.html)
 
-- 数据结构与算法
++ 数据结构与算法
   - [数据结构与算法学习路线](https://pokeai.cn/17.html)
   - [动态数组（C语言实现）](https://pokeai.cn/18.html)
 
 - LeetCode
 
-- 剑指 Offer
++ 剑指 Offer
   
 - Python
 
-- C++
++ C++

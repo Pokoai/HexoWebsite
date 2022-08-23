@@ -33,7 +33,7 @@ favicon: https://img.arctee.cn/one/favicon.ico
 ## 网易云音乐插件
 music: 
   enable: true
-  autoplay: true
+  autoplay: false
   id: 2818034763  
   
 

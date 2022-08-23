@@ -6,7 +6,7 @@ categories:
 - Coding
 - C++
 tags:
-- Learning-Path
+- LearningPath
 id: 44
 ---
 

@@ -13,6 +13,10 @@ tags:
 id: 86
 ---
 
+## 示意图
+
+待补充。。。
+
 ## 结构定义
 
 ```c
@@ -40,10 +44,6 @@ typedef int ShortestPathLength[MAXVEX];  // 存储V0到各顶点的最短距离
 typedef int PreVex[MAXVEX];  // 存储V0到各顶点最短路径的最后一个前驱节点，依据前驱节点可依次反推出最短路径走法
 
 ```
-
-## 示意图
-
-待补充。。。
 
 <!--more-->
 

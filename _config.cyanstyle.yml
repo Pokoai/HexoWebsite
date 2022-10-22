@@ -24,7 +24,7 @@ widgets:
 ## - tag
 - tagcloud
 - wechat
-- knowledge_planet
+## - knowledge_planet
 
 
 # Miscellaneous

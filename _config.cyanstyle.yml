@@ -1,10 +1,10 @@
 # Header
 menu:
   Home: /
-  Series: /series 
+  ## Series: /series 
   Archives: /archives
-  About: /about
   Projects: https://github.com/Pokoai
+  About: /about
   ## Rss: /atom.xml
 
 # Content

@@ -1,13 +1,13 @@
 # Header
 menu:
   Home: /
-  Series: /series
+  ## Series: /series
   Archives: /archives
-  About: /about
   Projects: https://github.com/Pokoai
   ## Nav: https://source.pokeai.cn
   ## Rss: /atom.xml
   Nav: https://nav.pokeai.cn
+  About: /about
 
 # Content
 excerpt_link: More

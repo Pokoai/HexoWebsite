@@ -55,7 +55,7 @@ waline:
   avatar: robohash # Gravatar头像展示方式。默认值：'mp'【不必填】
   requiredFields: [nick,mail]  # 设置评论者属性必填项。默认值：[]（即匿名）【不必填】
   placeholder: 快来评论吧~  # 评论占位提示
-  pageSize: 10 # 评论列表分页，每页条数。默认值：10【不必填】
+  pageSize:  # 评论列表分页，每页条数。默认值：10【不必填】
   copyright: false # 是否显示页脚版权信息。默认值true【不必填】
   
   visitor: # 文章访问量统计。默认值: false【不必填】

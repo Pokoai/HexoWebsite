@@ -2,8 +2,9 @@
 menu:
   Home: /
   ## Series: /series 
-  Archives: /archives
+  Finance: https://wiki.pokeai.cn/docs/finance
   Projects: https://github.com/Pokoai
+  Archives: /archives
   About: /about
   ## Rss: /atom.xml
 

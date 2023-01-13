@@ -1,10 +1,10 @@
 # Header
 menu:
   Home: /
+  Archives: /archives
+  Projects: https://github.com/Pokoai
   ## Series: /series 
   Finance: https://wiki.pokeai.cn/docs/finance
-  Projects: https://github.com/Pokoai
-  Archives: /archives
   About: /about
   ## Rss: /atom.xml
 

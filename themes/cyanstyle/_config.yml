@@ -1,13 +1,13 @@
 # Header
 menu:
   Home: /
+  Archives: /archives
   ## Series: /series
-  Finance: https://wiki.pokeai.cn/docs/finance
   Projects: https://github.com/Pokoai
   ## Nav: https://source.pokeai.cn
   ## Rss: /atom.xml
   Nav: https://nav.pokeai.cn
-  Archives: /archives
+  Finance: https://wiki.pokeai.cn/docs/finance
   About: /about
 
 # Content
